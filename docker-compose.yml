@@ -1,0 +1,30 @@
+services:
+  app:
+    build: .
+    container_name: laravel-sqlsrv
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/var/www/html
+    env_file:
+      - .env
+    depends_on:
+      - sqlsrv
+
+  sqlsrv:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: mssql2017
+    ports:
+      - "1433:1433"
+    env_file:
+      - .env
+    environment:
+      SA_PASSWORD: "S3nh@F0rte2024"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    volumes:
+      - mssql-data:/var/opt/mssql
+
+volumes:
+  mssql-data:
+    driver: local
