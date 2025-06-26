@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Livewire\{
-    Lista
+    TradeManager
 };
 
-Route::get('/', Lista::class);
+Route::get('/', TradeManager::class);
+
+
 
