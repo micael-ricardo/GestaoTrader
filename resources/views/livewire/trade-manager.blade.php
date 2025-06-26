@@ -1,3 +1,4 @@
+<div class="overlay-container">
 <div class="container py-4">
     @if(!$sessaoAtiva)
         <div class="card p-3">
@@ -86,4 +87,5 @@
             </table>
         </div>
     @endif
+</div>
 </div>
