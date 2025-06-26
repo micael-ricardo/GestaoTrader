@@ -2,7 +2,7 @@
 <div class="container py-4">
     @if(!$sessaoAtiva)
         <div class="card p-3">
-            <h5>Nova Sessão de Trade</h5>
+            <h5 >Nova Sessão de Trade</h5>
             <div class="row mb-2">
                 <div class="col">
                     <input type="date" class="form-control" wire:model="data" placeholder="Data">

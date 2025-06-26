@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 
     @livewireStyles
@@ -19,12 +20,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
             <div class="d-flex justify-content-center w-100">
-                <h1 class="navbar-brand">Gestão de Trader</h1>
+                <h1 class="navbar-brand">Gestão de Trading</h1>
             </div>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid p-0">
 
         <div id="mensagem-livewire" style="position: fixed; top: 20px; right: 20px; z-index: 9999;"></div>
 

@@ -3,10 +3,14 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Livewire\{
-    TradeManager
+    TradeManager,
+    Dashboard
 };
 
-Route::get('/', TradeManager::class);
+Route::get('/', Dashboard::class);
 
 
+
+
+Route::get('/trader', TradeManager::class)->name('trader');
 
