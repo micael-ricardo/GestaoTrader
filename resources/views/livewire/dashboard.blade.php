@@ -1,5 +1,4 @@
 <div class="d-flex">
-    {{-- Sidebar Desktop --}}
     <nav class="bg-dark text-white p-3 shadow-lg position-fixed top-0 start-0 vh-100 d-none d-lg-block" style="width: 250px; z-index: 1030;">
         <div class="text-center mb-4">
             <h5 class="fw-bold">TraderApp</h5>
@@ -12,8 +11,6 @@
             </li>
         </ul>
     </nav>
-
-    {{-- Sidebar Mobile (Offcanvas) --}}
     <div class="d-lg-none position-fixed top-0 start-0 z-1031 p-2">
         <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
             <i class="bi bi-list"></i>
@@ -35,8 +32,6 @@
             </ul>
         </div>
     </div>
-
-    {{-- Conteúdo principal --}}
     <main class="flex-grow-1 p-4 bg-black text-white" style="margin-left: 250px; width: 100%;">
         <div class="card bg-dark text-white p-4 shadow">
             <h4 class="text-center mb-4">Dashboard de Trade</h4>

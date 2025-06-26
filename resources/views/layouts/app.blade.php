@@ -19,6 +19,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
+            <div class="d-flex">
+                 <a href="{{ route('dashboard') }}" class="btn btn-outline-light">
+            <i class="bi bi-house-fill"></i> Dashboard
+        </a>
+        </div>
             <div class="d-flex justify-content-center w-100">
                 <h1 class="navbar-brand">Gestão de Trading</h1>
             </div>

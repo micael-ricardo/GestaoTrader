@@ -7,7 +7,7 @@ use App\Http\Livewire\{
     Dashboard
 };
 
-Route::get('/', Dashboard::class);
+Route::get('/', Dashboard::class)->name('dashboard');
 
 
 
